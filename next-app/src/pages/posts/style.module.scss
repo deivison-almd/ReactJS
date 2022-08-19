@@ -1,0 +1,62 @@
+
+.bodyContainer {
+  width: 40rem;
+  margin: 0 auto;
+  font-size: 30px;
+  height: calc(100vh - 5rem);
+}
+
+
+
+
+.container {
+  max-width: 600px;
+  justify-content: space-between;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+  }
+
+  .jogador1 {
+    display: inline-block;
+
+    .label1 {
+      font-weight: bold;
+      color: var(--cyan-500);
+      align-items: center;
+      justify-content: space-between;
+    }
+    .select1 {
+      align-items: center;
+      padding: 3px 0;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .jogador2 {
+    float: right;
+    .label2 {
+      font-weight: bold;
+      color: var(--red-500);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .select2 {
+      align-items: center;
+      padding: 3px 0;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  
+
+
+  option {
+    text-align: center;
+  }
+}

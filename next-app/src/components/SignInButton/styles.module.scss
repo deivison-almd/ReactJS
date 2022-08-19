@@ -1,0 +1,15 @@
+.buttonCadastro {
+    padding: 8px 8px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #121211;
+    color: var(--cyan-500);
+    border-radius: 5px;
+
+    justify-content: space-between;
+
+    span {
+        padding-left: 10px;
+    }
+}

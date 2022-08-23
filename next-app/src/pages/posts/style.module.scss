@@ -1,4 +1,5 @@
 
+
 .bodyContainer {
   width: 40rem;
   margin: 0 auto;
@@ -6,11 +7,8 @@
   height: calc(100vh - 5rem);
 }
 
-
-
-
 .container {
-  max-width: 600px;
+  max-width: 700px;
   justify-content: space-between;
 
   h1 {
@@ -19,14 +17,30 @@
     line-height: 4.5rem;
     font-weight: 900;
     margin-top: 2.5rem;
+
+    .buttonStart {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: 900;
+      margin-top: 10rem;
+      padding: 0 30px;
+  
+  
+      color: var(--green-500);
+      background-color: #000000;
+      border-radius: 7px;
+      border-color: var(--green-500);
+    }
   }
+  
 
   .jogador1 {
     display: inline-block;
 
     .label1 {
       font-weight: bold;
-      color: var(--cyan-500);
+      color: var(--red-500);
       align-items: center;
       justify-content: space-between;
     }
@@ -53,8 +67,6 @@
       font-size: 20px;
     }
   }
-  
-
 
   option {
     text-align: center;

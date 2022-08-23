@@ -1,3 +1,8 @@
 {
-  "usuarios": [{ "id": 1, "nome": "Deivison", "sexo": "M" }]
+  "usuarios": [
+    { "id": 1, "nome": "Deivison", "sexo": "M" },
+    { "id": 2, "nome": "Febem", "sexo": "F" },
+    { "id": 3, "nome": "Ygor", "sexo": "M" },
+    { "id": 4, "nome": "Léo", "sexo": "M" }
+  ]
 }

@@ -2,10 +2,11 @@ import { Col, Layout, Row, Select } from 'antd';
 import Head from 'next/head';
 import { useCallback, useEffect, useState } from 'react';
 import { api } from '../../services/api';
-
 import styles from './style.module.scss';
 
 import 'antd/dist/antd.css';
+
+import { Box } from '@chakra-ui/react';
 
 const { Option } = Select;
 
@@ -64,9 +65,15 @@ export default function NovaPartida() {
           <section className={styles.bodySection}>
             <div className={styles.container}>
               <h1>Disputa</h1>
-              {/* <div className={styles.jogador1}> */}
-              <Row>
-                <Col xs={24} sm={12} md={12} lg={12}>
+              {/* <div > */}
+              <Row className={styles.boxName}>
+                <Col
+                  className={styles.jogador1}
+                  xs={24}
+                  sm={12}
+                  md={12}
+                  lg={12}
+                >
                   <label className={styles.label1} htmlFor="jodador">
                     Jogador 1
                   </label>
@@ -84,20 +91,14 @@ export default function NovaPartida() {
                       </Option>
                     ))}
                   </Select>
-                  {/* <select className={styles.select1} name="jogador" id="jogador">
-                  <option value="player" disabled selected>
-                    selecionar
-                  </option>
-                  <option value="player1">Dany</option>
-                  <option value="player1">Dennis</option>
-                  <option value="player1">Waidiney</option>
-                  <option value="player1">Yuri</option>
-                  <option value="player1">Ygor</option>
-                  <option value="player1">Zaely</option>
-                </select> */}
                 </Col>
-                {/* <div className={styles.jogador2}> */}
-                <Col xs={24} sm={12} md={12} lg={12}>
+                <Col
+                  className={styles.jogador2}
+                  xs={24}
+                  sm={12}
+                  md={12}
+                  lg={12}
+                >
                   <label className={styles.label2} htmlFor="jodador">
                     Jogador 2
                   </label>
@@ -118,11 +119,19 @@ export default function NovaPartida() {
                 </Col>
               </Row>
               <br />
-              <p>
-                <>{usuario1}</>
-              </p>
-              <br />
-              <h2>{usuario2?.nome}</h2>
+              <Box className={styles.boxName}>
+                <span>
+                  <>
+                    <>{usuario1}</>
+                  </>
+                </span>
+                <span>
+                  <>
+                    <>{usuario2}</>
+                  </>
+                </span>
+              </Box>
+
               <h1>
                 <button className={styles.buttonStart}>Start</button>
               </h1>
